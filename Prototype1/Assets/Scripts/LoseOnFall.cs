@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 02)
+* (If the player falls off, the player loses.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

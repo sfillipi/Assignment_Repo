@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 02)
+* (Make the camera follow the player.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

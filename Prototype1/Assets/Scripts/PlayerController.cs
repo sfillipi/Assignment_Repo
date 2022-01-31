@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 02)
+* (Allow the main player character to be controlled by the player.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

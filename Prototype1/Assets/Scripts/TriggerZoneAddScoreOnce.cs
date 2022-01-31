@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 02)
+* (Adds to the score when each trigger is entered.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
