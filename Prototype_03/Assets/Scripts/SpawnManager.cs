@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 03 - Protoype)
+* (Spawn animals randomly at random locations.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

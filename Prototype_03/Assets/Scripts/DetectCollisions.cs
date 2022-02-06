@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 03 - Protoype)
+* (Allow player to destroy animals with food, adding to the score.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

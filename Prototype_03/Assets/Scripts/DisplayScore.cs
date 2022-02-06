@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 03 - Protoype)
+* (Display the score after shooting an animal with food.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

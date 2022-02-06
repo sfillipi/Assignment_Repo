@@ -1,4 +1,10 @@
-﻿//This script is based on https://www.youtube.com/watch?v=3uyolYVsiWc
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 03 - Protoype)
+* (Manage the health that changes based on if animals get past the player.)
+*/
+
+//This script is based on https://www.youtube.com/watch?v=3uyolYVsiWc
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

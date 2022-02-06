@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+* (Sydney Fillipi)
+* (Assignment 03 - Protoype)
+* (Sets boundaries for animals and food to be destroyed.)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
