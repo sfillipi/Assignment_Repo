@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Sydney Fillipi)
+ * (Challenge_03)
+ * (Make backgrounds repeat and scroll)
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

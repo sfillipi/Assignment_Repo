@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Sydney Fillipi)
+ * (Challenge_03)
+ * (Make the background and spawned object move left)
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

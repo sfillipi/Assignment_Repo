@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Sydney Fillipi)
+ * (Challenge_03)
+ * (Manage the score, win condition, and loss condition)
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

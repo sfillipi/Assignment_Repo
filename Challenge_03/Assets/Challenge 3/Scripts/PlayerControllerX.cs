@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Sydney Fillipi)
+ * (Challenge_03)
+ * (Script to control player, define collisions with bomb and money)
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,8 +16,6 @@ public class PlayerControllerX : MonoBehaviour
     public float floatForce;
     private float gravityModifier = 1.5f;
     private Rigidbody playerRb;
-
-    public bool isOnGround = false;
 
     public ParticleSystem explosionParticle;
     public ParticleSystem fireworksParticle;
@@ -25,7 +29,6 @@ public class PlayerControllerX : MonoBehaviour
 
     public UIManager uIMan;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +41,8 @@ public class PlayerControllerX : MonoBehaviour
 
         // Apply a small upward force at the start of the game
         playerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
+
+        uIMan = GameObject.FindObjectOfType<UIManager>();
 
     }
 
