@@ -1,23 +1,20 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TriggerZoneAddScore : MonoBehaviour
 {
-
+    private bool triggered = false;
     private UIManager uIMan;
 
-    private bool triggered = false;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         uIMan = GameObject.FindObjectOfType<UIManager>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(other.CompareTag("Player") && !triggered)
+        if(collision.CompareTag("Player") && !triggered)
         {
             triggered = true;
             uIMan.score++;

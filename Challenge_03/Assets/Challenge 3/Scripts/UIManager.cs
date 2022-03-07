@@ -1,4 +1,4 @@
-﻿/*
+/*
  * (Sydney Fillipi)
  * (Challenge_03)
  * (Manage the score, win condition, and loss condition)

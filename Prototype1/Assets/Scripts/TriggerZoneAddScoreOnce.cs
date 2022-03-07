@@ -1,4 +1,4 @@
-﻿/*
+/*
 * (Sydney Fillipi)
 * (Assignment 02)
 * (Adds to the score when each trigger is entered.)

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Through
+  - Ge,
+  - Gem
   layers:
   - Default
   - TransparentFX
@@ -47,6 +49,9 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 261937263
+    locked: 0
+  - name: WinZone
+    uniqueID: 3832472407
     locked: 0
   - name: Main
     uniqueID: 1907945055

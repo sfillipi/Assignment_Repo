@@ -10,11 +10,18 @@ public class PlayerPlatformerController : PhysicsObject {
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    public UIManager addScore;
+
     // Use this for initialization
     void Awake () 
     {
         spriteRenderer = GetComponent<SpriteRenderer> (); 
         animator = GetComponent<Animator> ();
+    }
+
+    private void Start()
+    {
+        addScore = GameObject.FindObjectOfType<UIManager>();
     }
 
     protected override void ComputeVelocity()
@@ -53,4 +60,14 @@ public class PlayerPlatformerController : PhysicsObject {
 
         targetVelocity = move * maxSpeed;
     }
+
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if(collision.gameObject.CompareTag("Gem"))
+    //    {
+    //        addScore.score++;
+    //    }
+
+    //}
 }

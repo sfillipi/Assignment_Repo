@@ -1,4 +1,4 @@
-﻿/*
+/*
 * (Sydney Fillipi)
 * (Assignment 02)
 * (When the player enters a trigger zone, the score increases.)

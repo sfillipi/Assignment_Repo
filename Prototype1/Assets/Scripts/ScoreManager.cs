@@ -1,4 +1,4 @@
-﻿/*
+/*
 * (Sydney Fillipi)
 * (Assignment 02)
 * (Changes the score based on if the game is won or over.)

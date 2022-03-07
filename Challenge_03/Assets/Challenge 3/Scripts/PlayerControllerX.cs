@@ -1,4 +1,4 @@
-﻿/*
+/*
  * (Sydney Fillipi)
  * (Challenge_03)
  * (Script to control player, define collisions with bomb and money)
