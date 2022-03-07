@@ -1,4 +1,4 @@
-﻿/*
+/*
 * (Sydney Fillipi)
 * (Assignment 03 - Protoype)
 * (Manage the health that changes based on if animals get past the player.)
