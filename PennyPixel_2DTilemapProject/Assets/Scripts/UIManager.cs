@@ -35,15 +35,5 @@ public class UIManager : MonoBehaviour
     {
         scoreText.text = "Score: " + score;
 
-        //if(!playerFinish.gameOver)
-        //{
-        //    scoreText.text = "Score: " + score;
-        //}
-
-        if(playerFinish.gameOver)
-        {
-            scoreText.text = "You win!";
-        }
-
     }
 }
