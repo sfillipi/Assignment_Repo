@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Sydney Fillipi)
+ * (Assignment 5B)
+ * (Look around with the mouse.)
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

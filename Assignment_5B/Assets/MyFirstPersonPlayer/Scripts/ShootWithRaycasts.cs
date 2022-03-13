@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Sydney Fillipi)
+ * (Assignment 5B)
+ * (Shoot enemies, play muzzle falsh, take damage.)
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

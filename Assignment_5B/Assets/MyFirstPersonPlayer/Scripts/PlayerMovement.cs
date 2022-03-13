@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Sydney Fillipi)
+ * (Assignment 5B)
+ * (Move the player around with WASD.)
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
