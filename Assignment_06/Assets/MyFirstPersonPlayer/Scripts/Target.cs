@@ -15,8 +15,8 @@ public class Target : MonoBehaviour, IDamageable
 
     protected virtual void Awake()
     {
-        boxHealth = 20f;
-        coinHealth = 30f;
+        boxHealth = 50f;
+        coinHealth = 70f;
     }
 
     public void TakeDamage(float amount)
