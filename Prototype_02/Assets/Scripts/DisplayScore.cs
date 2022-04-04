@@ -1,4 +1,4 @@
-﻿/*
+/*
 * (Sydney Fillipi)
 * (Assignment 03 - Protoype)
 * (Display the score after shooting an animal with food.)

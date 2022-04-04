@@ -1,6 +1,6 @@
 ﻿/*
  * (Sydney Fillipi)
- * (Assignment 5B)
+ * (Assignment 6)
  * (Damage enemies when shot at.)
  */
 
@@ -8,20 +8,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+public class Target : MonoBehaviour, IDamageable
 {
-    public float health = 50f;
+    protected float boxHealth;
+    protected float coinHealth;
+
+    protected virtual void Awake()
+    {
+        boxHealth = 20f;
+        coinHealth = 30f;
+    }
 
     public void TakeDamage(float amount)
     {
-        health -= amount;
+        boxHealth -= amount;
 
-        if(health <= 0)
+        if (boxHealth <= 0)
         {
             Die();
         }
 
     }
+
 
     void Die()
     {

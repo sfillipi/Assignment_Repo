@@ -1,4 +1,4 @@
-﻿/*
+/*
 * (Sydney Fillipi)
 * (Assignment 03 - Protoype)
 * (Allow player to destroy animals with food, adding to the score.)
