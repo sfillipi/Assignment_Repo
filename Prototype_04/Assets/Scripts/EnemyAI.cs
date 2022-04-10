@@ -26,5 +26,10 @@ public class EnemyAI : MonoBehaviour
 
         //add force
         enemyRb.AddForce(lookDirection * speed);
+
+        if (transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }

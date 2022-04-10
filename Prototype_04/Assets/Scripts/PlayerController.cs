@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,11 +15,17 @@ public class PlayerController : MonoBehaviour
 
     public GameObject powerupIndicator;
 
+    public GameObject lossText;
+    public bool gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.FindGameObjectWithTag("FocalPoint");
+
+        gameOver = false;
+        lossText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,7 +34,12 @@ public class PlayerController : MonoBehaviour
         forwardInput = Input.GetAxis("Vertical");
 
         powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
-        
+
+        if (transform.position.y < -1)
+        {
+            LossCondition();
+        }
+
     }
 
     private void FixedUpdate()
@@ -39,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("PowerUp"))
+        if (other.CompareTag("PowerUp"))
         {
             hasPowerUp = true;
             Destroy(other.gameObject);
@@ -70,6 +82,17 @@ public class PlayerController : MonoBehaviour
             Vector3 awayFromPlayer = (collision.gameObject.transform.position - transform.position).normalized;
 
             enemeyRigidbody.AddForce(awayFromPlayer * powerUpStrength, ForceMode.Impulse);
+        }
+    }
+
+    public void LossCondition()
+    {
+        lossText.gameObject.SetActive(true);
+        gameOver = true;
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
