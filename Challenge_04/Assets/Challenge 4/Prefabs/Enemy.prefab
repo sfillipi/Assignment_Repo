@@ -122,3 +122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  spawnManagerScript: {fileID: 0}
+  enemiesDestroyed: 0
+  lossText: {fileID: 0}

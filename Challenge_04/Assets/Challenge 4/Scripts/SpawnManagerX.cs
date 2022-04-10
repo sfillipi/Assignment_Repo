@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SpawnManagerX : MonoBehaviour
 {
@@ -15,16 +17,31 @@ public class SpawnManagerX : MonoBehaviour
     public int waveCount = 1;
 
 
-    public GameObject player; 
+    public GameObject player;
+
+    public Text waveText;
+    public GameObject winText;
+
+    private void Start()
+    {
+        waveText.text = "Wave: 1";
+
+        winText.gameObject.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        enemyCount = GameObject.FindGameObjectsWithTag("Powerup").Length;
+        enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
         if (enemyCount == 0)
         {
             SpawnEnemyWave(waveCount);
+        }
+
+        if (waveCount >= 11)
+        {
+            WinCondition();
         }
 
     }
@@ -49,13 +66,15 @@ public class SpawnManagerX : MonoBehaviour
         }
 
         // Spawn number of enemy balls based on wave number
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < enemiesToSpawn; i++)
         {
             Instantiate(enemyPrefab, GenerateSpawnPosition(), enemyPrefab.transform.rotation);
         }
 
         waveCount++;
         ResetPlayerPosition(); // put player back at start
+
+        waveText.text = "Wave: " + waveCount;
 
     }
 
@@ -66,6 +85,16 @@ public class SpawnManagerX : MonoBehaviour
         player.GetComponent<Rigidbody>().velocity = Vector3.zero;
         player.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 
+    }
+
+    public void WinCondition()
+    {
+        winText.gameObject.SetActive(true);
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
 }
