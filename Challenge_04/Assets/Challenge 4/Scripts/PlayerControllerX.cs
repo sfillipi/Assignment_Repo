@@ -16,6 +16,8 @@ public class PlayerControllerX : MonoBehaviour
     private float powerupStrength = 25; // how hard to hit enemy with powerup
 
     public GameObject speedBoost;
+
+  
     
     void Start()
     {
