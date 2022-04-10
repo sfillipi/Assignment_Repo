@@ -24,6 +24,8 @@ public class SpawnManager : MonoBehaviour
         SpawnPowerup(1);
 
         waveText.text = "Wave: 1";
+
+        winText.gameObject.SetActive(false);
      
     }
 
